@@ -1,0 +1,332 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>汽车总动员</title>
+<link rel="stylesheet" href="car.css">
+</head>
+
+<body>
+    <script src="/demos/googlegg.js"></script>
+    <nav id="nav1">
+        <nav id="logo"><img src="img/logo.png" width="120px;" height="120px"> </nav>
+    <ul>
+        <li>
+            <a href="">网站首页</a>
+        </li>
+        <li>
+            <a href="">汽车品牌</a>
+            </li>
+            <li>
+                <a href="">车系鉴赏</a>
+                </li>
+                <li>
+                        <a href="">用户体验</a>
+                        </li>
+                        <li>
+                                <a href="">车主服务</a>
+                                </li>
+                                <li>
+                                        <a href="">配件商店</a>
+                                        </li>
+    </ul>
+    <span class="target"></span>
+    <input type="text" value="请搜索">
+</nav>
+
+
+    <div id="div1">
+        <div id="div1-1">
+            <video muted width="80%" height="500" autoplay loop>
+                    <source src="img/video1.mp4" type="video/mp4">
+                    <source src="img/video1.mp4" type="video/ogg">
+                    <source src="img/video1.mp4" type="video/webm">
+                    <object data="img/video1.mp4" width="320" height="240">
+                      <embed src="img/video1.mp4" width="320" height="240">
+                    </object> 
+                  </video>
+                </div>
+    
+    <div id="div1-2">
+        Here is going to put messages
+    </div>
+</div>
+
+    <div id="div2">
+        <img src="img/L1.jpg" id="xyz">
+        <p>兰博基尼，奢华体验</p>
+    </div>
+    <img src="img/L1.jpg">
+    <script src="car.js"></script>
+
+<div id="final">
+  <ul>
+      <Li><a href="#">关于我们</a></Li>
+      <Li><a href="#">未来发展</a></Li>
+      <Li><a href="#">评论留言</a></Li>
+      <Li><a href="#">超清车图</a></Li>
+      <Li><a href="#">车主服务</a></Li>
+  </ul>
+    <h6>关注我们   
+©2019 年汽车总动员有限公司版权所有增值税号码：IT 666666666
+
+川ICP备22222222号 logo ICP京公网安备 11111111111111号
+</h6>
+</div>
+</body>
+</html>
+
+
+
+————————————————————————————————————————————————————
+
+css部分：
+html,body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+#nav1{
+    width:100%;
+    height:180px;
+    border:1px solid yellow;
+    top:0%;
+    position: fixed;
+    z-index=1;
+    background:rgba(255,255,255,0.1);
+    background-color:white;
+}
+#nav1 ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+#nav1 li:not(:last-child) {
+    margin-right: 20px;
+  }
+#nav1 ul li a {
+    display: block;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    padding: 7px 15px;
+    font-size:18px;
+  }
+.target {
+    position: absolute;
+    border-bottom: 2px solid transparent;
+    z-index: -1;
+    -webkit-transform: translateX(-60px);
+    transform: translateX(-60px);
+  }
+#nav1 a,
+.target {
+    -webkit-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out;
+}
+#logo{
+    height:40px;
+    width:40px;
+    margin-top:50px;
+    left:5%;
+    position: absolute;
+}
+input{
+    right:0%;
+    position: absolute;
+    top:8%;
+    z-index: 1;
+}
+nav h1{
+    position: absolute;
+    margin-top:60px;
+    left:50%;
+ }
+ video{
+    object-fit:contain;
+    left:1%;
+    width:90%;
+    
+ }
+ nav ul{
+    display: block;
+    text-align: center;
+    padding-top:0;
+ }
+ nav ul li{
+     list-style-type: none;
+     display: inline;
+     margin-left: 15px;
+ }
+ nav ul li a{
+    text-decoration:none;
+    color:white;
+}
+hr{
+    width: 100%;
+}
+#div1{
+    width:100%;
+    border:1px solid blue;
+    margin-top:200px;
+    height:500px;
+    text-align: center;
+    overflow: hidden;
+}
+#div1-1{
+ border: 1px solid pink;
+ width:70%;
+ height:500px;
+ float: left;
+}
+#div1-2{
+    border: 2px dashed gray;
+    width:29%;
+    height:500px;
+    float: left;
+   }
+#div2{
+    border: 1px solid red;
+    width:100%;
+    height:500px;
+}
+#div2 img{
+    width: 50%;
+    height:300px;
+    float: left;
+}
+
+#div2 p{
+    font-size:14px;
+    font-weight: bold;
+}
+#final{
+  background-image: url("img/final.png");
+  background-repeat: no-repeat;
+  background-size:45%;
+  background-position: center;
+  height:550px;
+  background-color: black;
+  position: relative;
+}
+#final h6{
+    color: white;
+    position: absolute;
+    bottom:0;
+    margin:0;
+}
+#final ul { 
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+}
+#final ul li{
+    display: inline;
+    color: white;
+    margin-left: 50px;
+    
+}
+#final ul li a{
+    text-decoration: none;
+    color:white;
+    transition:opacity 0.5s;
+    text-decoration: 
+}
+#final ul li a:hover{
+    text-decoration: none;
+    color:white;
+    opacity: 0.3;
+    transition:0.5s; 
+}
+
+
+
+
+
+————————————————————————————————————————————————
+JS部分：
+window.onload=function(){
+var curIndex=0; 
+//时间间隔 单位毫秒 
+var space=2222; 
+var arr=new Array(); 
+arr[0]="img/L1.jpg";
+arr[1]="img/L2.jpg"; 
+arr[2]="img/L3.png"; 
+arr[3]="img/L4.jpg"; 
+
+setInterval(changeImg,space); 
+function changeImg() 
+{ 
+var xyz=document.getElementById("xyz"); 
+if (curIndex==arr.length-1) 
+{ 
+curIndex=0; 
+} 
+else 
+{ 
+curIndex+=1; 
+} 
+xyz.src=arr[curIndex]; 
+} 
+}
+//图片定时切换
+
+"use strict";
+
+(function () {
+
+  var target = document.querySelector(".target");
+  var links = document.querySelectorAll("#nav1 a");
+  var colors = ["deepskyblue", "orange", "firebrick", "gold", "magenta", "black", "darkblue"];
+
+  function mouseenterFunc() {
+    if (!this.parentNode.classList.contains("active")) {
+      for (var i = 0; i < links.length; i++) {
+        if (links[i].parentNode.classList.contains("active")) {
+          links[i].parentNode.classList.remove("active");
+        }
+        links[i].style.opacity = "0.3";
+      }
+      this.parentNode.classList.add("active");
+      this.style.opacity = "1";
+      var width = this.getBoundingClientRect().width;
+      var height = this.getBoundingClientRect().height;
+      var left = this.getBoundingClientRect().left + window.pageXOffset;
+      var top = this.getBoundingClientRect().top + window.pageYOffset;
+      var color = colors[Math.floor(Math.random() * colors.length)];
+      target.style.width = width + "px";
+      target.style.height = height + "px";
+      target.style.left = left + "px";
+      target.style.top = top + "px";
+      target.style.borderColor = color;
+      target.style.transform = "none";
+    }
+  }
+
+  for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", function (e) {
+      return e.preventDefault();
+    });
+    links[i].addEventListener("mouseenter", mouseenterFunc);
+  }
+
+  function resizeFunc() {
+    var active = document.querySelector(".#nav1 li.active");
+    if (active) {
+      var left = active.getBoundingClientRect().left + window.pageXOffset;
+      var top = active.getBoundingClientRect().top + window.pageYOffset;
+      target.style.left = left + "px";
+      target.style.top = top + "px";
+    }
+  }
+  window.addEventListener("resize", resizeFunc);
+})();
